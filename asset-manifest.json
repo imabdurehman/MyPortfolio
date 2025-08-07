@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.32a23ad3.css",
-    "main.js": "/MyPortfolio/static/js/main.43fab77b.js",
+    "main.css": "/MyPortfolio/static/css/main.ce64d597.css",
+    "main.js": "/MyPortfolio/static/js/main.bf64ff26.js",
     "static/media/product.png": "/MyPortfolio/static/media/product.7d92d4858703a138d688.png",
     "static/media/Abdulrehman_SoftwareEngineer_Resume.pdf": "/MyPortfolio/static/media/Abdulrehman_SoftwareEngineer_Resume.575aad226af574ccb794.pdf",
     "static/media/home.png": "/MyPortfolio/static/media/home.3611cbf986e51f85a3ac.png",
@@ -14,11 +14,11 @@
     "static/media/css.png": "/MyPortfolio/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/javascript.png": "/MyPortfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/MyPortfolio/index.html",
-    "main.32a23ad3.css.map": "/MyPortfolio/static/css/main.32a23ad3.css.map",
-    "main.43fab77b.js.map": "/MyPortfolio/static/js/main.43fab77b.js.map"
+    "main.ce64d597.css.map": "/MyPortfolio/static/css/main.ce64d597.css.map",
+    "main.bf64ff26.js.map": "/MyPortfolio/static/js/main.bf64ff26.js.map"
   },
   "entrypoints": [
-    "static/css/main.32a23ad3.css",
-    "static/js/main.43fab77b.js"
+    "static/css/main.ce64d597.css",
+    "static/js/main.bf64ff26.js"
   ]
 }
