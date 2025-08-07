@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import resume from "../assets/Abdulrehman_SoftwareEngineer_Resume.pdf";
+
 const SocialLinks = () => {
   const links = [
     {
@@ -46,30 +47,54 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
-      <ul>
-        {links.map(({ id, child, href, style, download }) => (
-          <li
-            key={id}
-            className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
-              " " +
-              style
-            }
-          >
-            <a
-              href={href}
-              className="flex justify-between items-center w-full text-white"
-              download={download}
-              target="_blank"
-              rel="noreferrer"
+    <>
+      {/* ===== Desktop (vertical left fixed) ===== */}
+      <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+        <ul>
+          {links.map(({ id, child, href, style, download }) => (
+            <li
+              key={id}
+              className={
+                "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500 " +
+                style
+              }
             >
-              {child}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+              <a
+                href={href}
+                className="flex justify-between items-center w-full text-white"
+                download={download}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {child}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* ===== Mobile (scrolls, matches footer) ===== */}
+      <div className="lg:hidden w-full bg-black mt-4">
+        <ul className="flex justify-around items-center text-white">
+          {links.map(({ id, href, child, download }) => (
+            <li
+              key={id}
+              className="py-3 hover:bg-gray-800 w-full text-center duration-200"
+            >
+              <a
+                href={href}
+                className="flex flex-col items-center text-sm"
+                download={download}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {child}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 };
 
